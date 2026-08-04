@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Happy Birthday ❤️</title>
+    <meta name="theme-color" content="#090714">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="lockScreen">
+        <div class="wallpaper">
+            <img src="sister.jpg" alt="Wallpaper">
+        </div>
+        <div class="wallpaper-overlay"></div>
+
+        <div class="lock-content">
+            <p class="date" id="lockDate"></p>
+            <h1 class="time" id="lockTime">00:00</h1>
+
+            <div class="notification">
+                <div class="notification-icon">🎉</div>
+                <div class="notification-text">
+                    <strong>Birthday Surprise</strong>
+                    <p>Oscar built something just for you ❤️</p>
+                </div>
+            </div>
+
+            <div id="passcodeScreen">
+                <h2 class="passcode-title">Enter Passcode</h2>
+
+                <div id="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="keypad">
+                    <button class="key">1</button>
+                    <button class="key">2</button>
+                    <button class="key">3</button>
+
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+
+                    <button class="key">7</button>
+                    <button class="key">8</button>
+                    <button class="key">9</button>
+
+                    <button class="key empty"></button>
+                    <button class="key">0</button>
+                    <button id="deleteKey">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="stars"></div>
+
+    <main class="hero">
+        <div class="glass-card">
+            <p class="intro">Someone spent time creating this just for you...</p>
+
+            <h1 class="birthday-title">Happy Birthday</h1>
+            <h2 class="name">My Beautiful Sister ❤️</h2>
+
+            <div class="divider"></div>
+
+            <section class="photo-section">
+                <div class="photo-ring"></div>
+                <div class="photo-glow"></div>
+                <img src="sister.jpg" alt="Birthday Girl" class="profile-photo">
+            </section>
+
+            <p class="message">
+                Today is all about celebrating you.<br><br>
+                I may not have bought you a present, but I wanted to build you something from my heart.<br><br>
+                I hope this little surprise makes you smile.
+            </p>
+
+            <button id="beginBtn">Begin Your Birthday Journey</button>
+        </div>
+    </main>
+
+    <section id="letterSection">
+        <h2 class="section-title">A Letter Just For You ❤️</h2>
+
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap"></div>
+            <div class="letter" id="letter">
+                <h2>Happy Birthday ❤️</h2>
+                <p id="typedLetter"></p>
+            </div>
+        </div>
+
+        <p class="tap-text">Tap the envelope to open it</p>
+    </section>
+
+    <audio id="birthdayMusic" preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+    <footer>
+        Made with ❤️ by your brother
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
