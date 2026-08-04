@@ -59,7 +59,7 @@
 
                     <button class="key empty"></button>
                     <button class="key">0</button>
-                    <button id="deleteKey">Delete</button>
+                    <button class="key delete-key" id="deleteKey">Delete</button>
                 </div>
             </div>
         </div>
@@ -77,18 +77,42 @@
             <div class="divider"></div>
 
             <section class="photo-section">
-                <div class="photo-ring"></div>
-                <div class="photo-glow"></div>
-                <img src="sister.jpg" alt="Birthday Girl" class="profile-photo">
-            </section>
+    <div class="photo-ring"></div>
+    <div class="photo-glow"></div>
+    <div class="photo-slider" id="photoSlider">
+        <img src="sister.jpg" class="profile-photo active" alt="Birthday Girl 1">
+        <img src="1.jpg" class="profile-photo" alt="Birthday Girl 2">
+        <img src="2.jpg" class="profile-photo" alt="Birthday Girl 3">
+        <img src="3.jpg" class="profile-photo" alt="Birthday Girl 4"> </div>
+</section>
 
+           <section class="gallery-container">
+    <h3 class="gallery-title">Memories & Moments ✨</h3>
+    <div class="carousel">
+        <div class="card">
+            <img src="sister.jpg" alt="Cozy moments">
+            <p class="caption">🌸 Cozy moments</p>
+        </div>
+        <div class="card">
+            <img src="1.jpg" alt="Beautiful as always">
+            <p class="caption">💕 Beautiful as always</p>
+        </div>
+        <div class="card">
+            <img src="2.jpg" alt="Birthday Queen">
+            <p class="caption">✨ Birthday Queen</p>
+        </div>
+        <div class="card">
+            <img src="3.jpg" alt="Forever Smiling">
+            <p class="caption">🌟 Forever Smiling</p> </div>
+    </div>
+</section>
             <p class="message">
                 Today is all about celebrating you.<br><br>
-                I may not have bought you a present, but I wanted to build you something from my heart.<br><br>
+                I may not have bought you a present, but I wanted to build you something straight from my heart.<br><br>
                 I hope this little surprise makes you smile.
             </p>
 
-            <button id="beginBtn">Begin Your Birthday Journey</button>
+            <button id="beginBtn">Begin Your Birthday Journey ✨</button>
         </div>
     </main>
 
@@ -105,14 +129,28 @@
         </div>
 
         <p class="tap-text">Tap the envelope to open it</p>
+
+        <div id="surpriseWrapper" style="display: none; margin-top: 40px;">
+            <button id="surpriseBtn">One Last Surprise 🎁</button>
+        </div>
     </section>
 
+    <div id="finaleOverlay" class="finale-overlay">
+        <div class="finale-content">
+            <p class="finale-text">No matter how old you become...</p>
+            <p class="finale-text highlight">You'll always be my sister.</p>
+            <h2 class="finale-title">Happy Birthday ❤️</h2>
+            <img src="sister.jpg" class="finale-photo" alt="Final Portrait">
+            <button id="closeFinaleBtn" style="margin-top: 25px;">Back to Top ✨</button>
+        </div>
+    </div>
+
     <audio id="birthdayMusic" preload="auto">
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
     <footer>
-        Made with ❤️ by your brother
+        Made with ❤️ by Oscar
     </footer>
 
     <script src="script.js"></script>
